@@ -59,3 +59,6 @@ The project files and folders are organized as follows:
 * Manuel Cipriano (cip21002@byui.edu)
 * Shane Cook (scc0131@byui.edu)
 * (Cole) Ukeje Chinemerem (uke21001@byui.edu)
+
+---
+*Shane Cook is the author of this document*
