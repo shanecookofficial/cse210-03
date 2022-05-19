@@ -20,11 +20,11 @@ Jumper is played according to the following rules:
 ## Interface
 
 ---
-<img src="images/jumper-screenshot-1.png" alt="Jumper Screenshot 1">
+<img src="images/jumper-screenshot-1.png" alt="Jumper Screenshot 1" width="500">
 
 play continues until...
 
-<img src="images/jumper-screenshot-2.png" alt="Jumper Screenshot 2">
+<img src="images/jumper-screenshot-2.png" alt="Jumper Screenshot 2" width="500">
 
 ---
 ## Getting Started
