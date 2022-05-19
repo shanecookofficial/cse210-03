@@ -35,3 +35,4 @@ Manuel Cipriano
 Chinemerem Ukeje (Cole)
 * This is a responsibility
 ---
+*Shane Cook is the author of this document*
