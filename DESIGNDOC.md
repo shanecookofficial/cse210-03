@@ -15,8 +15,6 @@ The plan for this program is to have three classes, the player, puzzle and termi
 
 The first class is the director class. This class will call upon other classes to retrieve information from its parent classes. 
 
-The second class is the player class. This class will send player visuals to its child class to display the jumper character.
-
 The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
 
 The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
@@ -35,7 +33,8 @@ Director
 | + get_inputs()
 | + do_outputs()
 ----------------------------
->>>>>>>
+
+The second class is the player class. This class will send player visuals to its child class to display the jumper character.
 
 Player
 ---------------------------
@@ -73,10 +72,10 @@ Shane Cook
 * start_game method in the Director() class
 
 Antonio Saucedo
+* DESIGNDOC.md "Plan" & "Principles" section
 * get_inputs method for the director class.
 * do_outputs method for the director class.
 * Contributed three to four words to puzzle class word list.
-* DESIGNDOC.md "The Plan" section
 
 Godwin Iyip
 - Create the Puzzle Private Class
