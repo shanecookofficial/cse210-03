@@ -49,7 +49,9 @@ Puzzle
 
 | - NEED
 ----------------------------
-| + NEED()
+| + list_of_words()
+| + get_value()
+| + get_words()
 ----------------------------
 
 <p>&nbsp;</p>
@@ -78,7 +80,7 @@ Antonio Saucedo
 * DESIGNDOC.md "Plan" & "Principles" section
 * get_inputs method for the director class.
 * do_outputs method for the director class.
-* Contributed three to four words to puzzle class word list.
+* Contributed three to four words to puzzle class word list.(Parachute, Escalator, Hurricane, Freezing.)
 
 Godwin Iyip
 - Create the Puzzle Private Class
