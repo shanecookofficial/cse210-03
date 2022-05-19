@@ -4,7 +4,7 @@
 
 ---
 ## Principals used in the program
-* This is a principal 
+* Encapsulation
   * Here is a detail about that principal
 * Oh wow, another principal!
 
@@ -25,7 +25,8 @@ Shane Cook
 * Contributed three to four words to puzzle class word list.
 
 Antonio Saucedo
-* This is a responsibility
+* get_inputs method for the director class.
+* do_outputs method for the director class.
 * Contributed three to four words to puzzle class word list.
 
 Godwin Iyip
