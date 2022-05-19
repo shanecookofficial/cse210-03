@@ -8,7 +8,7 @@
   * Created various private classes to be used inside the director class which is used inside of the main.py file. This allows for access control and restriction to parent classes on child class.
 * Version Control System (VCS)
   * Each team member used git to stage and commit changes to the program while similtaneously pulling changes to keep the program
-  * Github was used to house the public repository(see "Read Me" link above)
+  * Github was used to house the public repository(see "Read Me" link above for design specifications)
 ---
 ## The Plan
 The plan for this program is to have three classes, the player, puzzle and terminal_service classes, to be called upon by the director class which will call upon by the main file to run the program. 
@@ -42,12 +42,14 @@ Player
 ----------------------------
 
 <p>&nbsp;</p>
-The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
+The third class is the puzzle class. This class will choose a word from a list utilizing the random library and send the word information the child class to display and perform needed actions upon.
 
 Puzzle
 ---------------------------
 
-| - NEED
+| - words
+| - value
+| - pickedWord
 ----------------------------
 | + list_of_words()
 | + get_value()
