@@ -29,7 +29,12 @@ Antonio Saucedo
 * Contributed three to four words to puzzle class word list.
 
 Godwin Iyip
-* This is a responsibility
+- Create the Puzzle Private Class
+  - Contains the Functions:
+    - List of the words: (list_of_words)
+    - Get Value: (get_value)
+    - Get list of Words: (get_words)
+
 * Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
@@ -37,7 +42,7 @@ Manuel Cipriano
 * Contributed three to four words to puzzle class word list.
 
 Chinemerem Ukeje (Cole)
-* This is a responsibility
+- Create the Terminal Service Class
 * Contributed three to four words to puzzle class word list.
 ---
 *Shane Cook is the author of this document*
