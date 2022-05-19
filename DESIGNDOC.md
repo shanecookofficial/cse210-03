@@ -19,7 +19,6 @@ The third class is the puzzle class. This class will send word information the t
 
 The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
 
-<<<<<<< HEAD
 Director
 ---------------------------
 
