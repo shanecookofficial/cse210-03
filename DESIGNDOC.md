@@ -31,6 +31,7 @@ Director
 
 
 The second class is the player class. This class will send player visuals to its child class to display the jumper character.
+
 Player
 ---------------------------
 
@@ -41,6 +42,7 @@ Player
 
 
 The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
+
 Puzzle
 ---------------------------
 
@@ -51,6 +53,7 @@ Puzzle
 
 
 The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
+
 Terminal_Service
 ---------------------------
 
