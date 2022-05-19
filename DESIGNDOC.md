@@ -21,13 +21,17 @@ Isn't it awesome?
 ## Team Responsibilities
 
 Shane Cook
-* This is a responsibility
-* Contributed three to four words to puzzle class word list.
+* Contributed three to four words to puzzle class word list.(Flamingo, Boutique, Taco, Salad)
+* DESIGNDOC.md documentation
+* README.md documentation
+* initializer method in the Director() class
+* start_game method in the Director() class
 
 Antonio Saucedo
 * get_inputs method for the director class.
 * do_outputs method for the director class.
 * Contributed three to four words to puzzle class word list.
+* DESIGNDOC.md "The Plan" section
 
 Godwin Iyip
 - Create the Puzzle Private Class
@@ -39,7 +43,6 @@ Godwin Iyip
 * Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
-* This is a responsibility
 * Contributed three to four words to puzzle class word list.
 
 Chinemerem Ukeje (Cole)
