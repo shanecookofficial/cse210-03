@@ -1,4 +1,7 @@
-
+""" Code for game setup and call classes from other files to be used in the game"""
+from player import player
+from puzzle import puzzle
+from terminal_service import terminal_services
 
 class Director():
 
