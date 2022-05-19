@@ -15,10 +15,6 @@ The plan for this program is to have three classes, the player, puzzle and termi
 
 The first class is the director class. This class will call upon other classes to retrieve information from its parent classes. 
 
-The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
-
-The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
-
 Director
 ---------------------------
 
@@ -43,6 +39,8 @@ Player
 | + NEED()
 ----------------------------
 
+The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
+
 Puzzle
 ---------------------------
 
@@ -51,6 +49,8 @@ Puzzle
 | + NEED()
 ----------------------------
 
+The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
+
 Terminal_Service
 ---------------------------
 
@@ -58,7 +58,7 @@ Terminal_Service
 ----------------------------
 | + NEED()
 ----------------------------
-=======
+
 ---
 
 ## Team Responsibilities
