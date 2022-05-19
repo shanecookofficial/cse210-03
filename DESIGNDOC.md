@@ -13,6 +13,7 @@
 ## The Plan
 The plan for this program is to have three classes, the player, puzzle and terminal_service classes, to be called upon by the director class which will call upon by the main file to run the program. 
 
+&nbsp  
 The first class is the director class. This class will call upon other classes to retrieve information from its parent classes. 
 
 Director
@@ -29,7 +30,7 @@ Director
 | + do_outputs()
 ----------------------------
 
-
+&nbsp  
 The second class is the player class. This class will send player visuals to its child class to display the jumper character.
 
 Player
@@ -40,7 +41,7 @@ Player
 | + NEED()
 ----------------------------
 
-
+&nbsp  
 The third class is the puzzle class. This class will send word information the the child class to display and perform needed actions upon.
 
 Puzzle
@@ -51,7 +52,7 @@ Puzzle
 | + NEED()
 ----------------------------
 
-
+&nbsp  
 The fourth class is the terminal_service class. This class will provide input and output operations to the child class.
 
 Terminal_Service
