@@ -20,7 +20,6 @@ Director
 ---------------------------
 
 | - word
-| - check
 | - displayPlayer
 | - guess
 | - lives
