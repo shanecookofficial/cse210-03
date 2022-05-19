@@ -22,17 +22,22 @@ Isn't it awesome?
 
 Shane Cook
 * This is a responsibility
+* Contributed three to four words to puzzle class word list.
 
 Antonio Saucedo
 * This is a responsibility
+* Contributed three to four words to puzzle class word list.
 
 Godwin Iyip
 * This is a responsibility
+* Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
 * This is a responsibility
+* Contributed three to four words to puzzle class word list.
 
 Chinemerem Ukeje (Cole)
 * This is a responsibility
+* Contributed three to four words to puzzle class word list.
 ---
 *Shane Cook is the author of this document*
