@@ -30,14 +30,20 @@ Director
 ----------------------------
 
 <p>&nbsp;</p>
-The second class is the <strong>player</strong> class. This class will send player visuals to its child class to display the jumper character.
+The second class is the <strong>player</strong> class. This class represents the player of the game. This class will store the player's life, the parachute (another representation of the player's life) and the chosen letter for the player (which will be use to guess).
 
 Player
 ---------------------------
-
-| - NEED
+| - life
+| - parachuteLife
+| - letterChosen
 ----------------------------
-| + NEED()
+| + getLife()
+| + getParachuteLife()
+| + getLetterChosen()
+| + updateLife()
+| + updateParachuteLife()
+| + updateLetterChosen()
 ----------------------------
 
 <p>&nbsp;</p>
@@ -93,7 +99,8 @@ Godwin Iyip
 * Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
-* Contributed three to four words to puzzle class word list.
+- Designing and creating the Player class.
+* Contributed with four words for the list of words to be guessed. These words are courage, continue, counts, churchill.
 
 Chinemerem Ukeje (Cole)
 - Create the Terminal Service Class
