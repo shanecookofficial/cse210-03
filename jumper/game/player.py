@@ -1,6 +1,7 @@
+#imports the director class so the Player class is a child class of the Director class
+from director import Director
 # Class player, it represents the player of the game
-
-class Player:
+class Player(Director):
     
     # Constructor for the class Player
     # It initializes the following private class attributes

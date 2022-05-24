@@ -1,26 +1,20 @@
 """ Code for game setup and call classes from other files to be used in the game"""
-#from player import player
-#from puzzle import puzzle
-#from terminal_service import terminal_services
+from terminal_service import Terminal_Service
+from player import Player
+from puzzle import Puzzle
 
 
 class Director():
     """This class will initiate and direct the flow of the jumper game.
 
     Attributes:
-        word: string - stores the word to guess
-        displayPlayer: string - stores a list of strings to display the jumper character
-        guess: string - stores the user word guess
-        lives: integer - stores number of lives remaining
+        
         play: boolean - tracks if the player wants to play again or not"""
 
     # Shane
     def __init__(self) -> None:
-        self.guess = ""
-        self.lives = 4
-        self.__word = ""
-        self.displayPlayer = [" ___ ","/___\\","\\   /"," \\ /","  o  "," /|\\ "," / \\","","^^^^^^"]
         self.play = True
+        
 
     # Shane
     def start_game(self):
@@ -30,7 +24,10 @@ class Director():
         Args:
             self (Director): An instance of Director.
         """
-        while self.play & (self.lives > 0):
+        player = Player()
+        puzzle = Puzzle()
+        terminalService = Terminal_Service()
+        while self.play:
             self.get_inputs()
             self.do_outputs()
             self.play_again()
