@@ -1,4 +1,4 @@
-##imports the director class so the Puzzle class is a child class of the Director class
+#imports the director class so the Puzzle class is a child class of the Director class
 from director import Director
 """ Game word and value generator """
 

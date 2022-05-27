@@ -14,8 +14,10 @@ class Director():
     # Shane
     def __init__(self) -> None:
         self.play = True
+        self.player = Player()
+        self.puzzle = Puzzle()
+        self.terminalService = Terminal_Service()
         
-
     # Shane
     def start_game(self):
         """
@@ -24,9 +26,7 @@ class Director():
         Args:
             self (Director): An instance of Director.
         """
-        player = Player()
-        puzzle = Puzzle()
-        terminalService = Terminal_Service()
+
         while self.play:
             self.get_inputs()
             self.do_outputs()
