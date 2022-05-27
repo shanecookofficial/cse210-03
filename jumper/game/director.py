@@ -1,7 +1,8 @@
 """ Code for game setup and call classes from other files to be used in the game"""
-from terminal_service import Terminal_Service
-from player import Player
-from puzzle import Puzzle
+#from terminal_service import Terminal_Service
+#from player import Player
+#from puzzle import Puzzle
+from displayPlayer import displayPlayer
 
 
 class Director():
@@ -14,9 +15,9 @@ class Director():
     # Shane
     def __init__(self) -> None:
         self.play = True
-        self.player = Player()
-        self.puzzle = Puzzle()
-        self.terminalService = Terminal_Service()
+        self.lives = 4
+        self._displayPlayer = displayPlayer()
+        
         
     # Shane
     def start_game(self):
