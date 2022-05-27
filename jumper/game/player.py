@@ -1,7 +1,7 @@
 #imports the director class so the Player class is a child class of the Director class
-from director import Director
+#from director import Director
 # Class player, it represents the player of the game
-class Player(Director):
+class Player:
     
     # Constructor for the class Player
     # It initializes the following private class attributes
@@ -37,6 +37,7 @@ class Player(Director):
     def updateLetterChosen(self, newLetter):
         self._letterChosen = newLetter
 
+"""
 # Examples of how to use this class
 def main():
     # Create and instance of the Player class
@@ -94,3 +95,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""
