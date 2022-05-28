@@ -1,8 +1,8 @@
 """ Code for game setup and call classes from other files to be used in the game"""
-#from terminal_service import Terminal_Service
-#from player import Player
-#from puzzle import Puzzle
 from displayPlayer import displayPlayer
+from check import Check
+from word import Word
+import random
 
 
 class Director():
@@ -17,6 +17,8 @@ class Director():
         self.play = True
         self.lives = 4
         self._displayPlayer = displayPlayer()
+        self._check = Check()
+        self._word = Word()
         
         
     # Shane
@@ -29,6 +31,8 @@ class Director():
         """
 
         while self.play:
+            self._displayPlayer.displayJumper()
+            self._secret_word = self._word.pickWord()
             self.get_inputs()
             self.do_outputs()
             self.play_again()
