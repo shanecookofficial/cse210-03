@@ -9,21 +9,21 @@ class Director:
     """This class will initiate and direct the flow of the jumper game.
 
     Attributes:
-        
+
         play: boolean - tracks if the player wants to play again or not"""
 
     # Shane
     def __init__(self) -> None:
-        self.play = True
-        self.lives = 4
+        self._play = True
+        self._lives = 4
         self._displayPlayer = displayPlayer()
         self._check = Check()
         self._word = Word()
         self._guess = ""
         self._guesses = []
-        
-        
+
     # Shane
+
     def start_game(self):
         """
         Starts the game by running the main game loop.
@@ -32,7 +32,7 @@ class Director:
             self (Director): An instance of Director.
         """
 
-        while self.play:
+        while self._play:
             self._displayPlayer.displayJumper()
             self._secret_word = self._word.pickWord()
             self.play()
@@ -40,17 +40,20 @@ class Director:
 
     # Antonio
     def play(self):
-        if not self.play:
+        if not self._play:
             return
-        
-        while not self._guess(0).isalpha():
+
+        while self._lives > 0:
             self._guess = input("Guess a letter [a-z]: ")
-            if not self._guess(0).isalpha(): return
-            if not self._check.checkGuess(self._guess(0), self._secret_word):
-                self.lives -= 1
+
+            while (not self._guess.isalpha()) or (len(self._guess) > 1) or (self._guess in self._guesses):
+                self._guess = input("Guess a letter [a-z]: ")
+
+            if not self._check.checkGuess(self._guess, self._secret_word):
+                self._lives -= 1
                 self._displayPlayer.displayUpdate()
             else:
-                self._guesses.append(self._guess(0))
+                self._guesses.append(self._guess)
             for i in self._secret_word:
                 if i in self._guesses:
                     print(i)
@@ -58,35 +61,35 @@ class Director:
                     print("_")
             self._displayPlayer.displayJumper()
 
-    
-    #Shane
-    def play_again(self):
-        """
-        Asks the user if they want to play again.
+    # Shane
 
-        Args:
-            self (Director): An instance of Director.
-        """
-        if not self.play:
-            return
+    # def play_again(self):
+    #     """
+    #     Asks the user if they want to play again.
 
-        elif self.lives == 0:
-            answer = ""
+    #     Args:
+    #         self (Director): An instance of Director.
+    #     """
+    #     if not self._play:
+    #         return
 
-            while (answer != "y" and answer != "n"):
-                answer = input("Want to play again? [y/n] ").lower()
+    #     elif self._lives == 0:
+    #         answer = ""
 
-                if (answer != "n" and answer !="y"):
-                    print("Please enter a \"y\" or a \"n\".")
+    #         while (answer != "y" and answer != "n"):
+    #             answer = input("Want to play again? [y/n] ").lower()
 
-            if answer == "n":
-                print ("\nGame over. You chose to stop playing.\n")
-                self.play = False
-            else:
-                self.play = True
+    #             if (answer != "n" and answer != "y"):
+    #                 print("Please enter a \"y\" or a \"n\".")
 
-        else:
-            return
+    #         if answer == "n":
+    #             print("\nGame over. You chose to stop playing.\n")
+    #             self._play = False
+    #         else:
+    #             self._play = True
+
+    #     else:
+    #         return
 
 
 """Shane Cook and Antonio Saucedo are the authors of this document"""
