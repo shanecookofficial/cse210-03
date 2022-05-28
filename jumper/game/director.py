@@ -2,7 +2,7 @@
 from game.displayPlayer import displayPlayer
 from game.check import Check
 from game.word import Word
-import random
+import sys
 
 
 class Director:
@@ -40,8 +40,6 @@ class Director:
 
     # Antonio
     def play(self):
-        if not self._play:
-            return
 
         while self._lives > 0:
             self._guess = input("Guess a letter [a-z]: ")
@@ -56,40 +54,23 @@ class Director:
                 self._guesses.append(self._guess)
             for i in self._secret_word:
                 if i in self._guesses:
-                    print(i)
+                    print(i + " ", end="")
                 else:
-                    print("_")
+                    print("_ ", end="")
+            print("\n")
             self._displayPlayer.displayJumper()
 
-    # Shane
+    #Shane
 
-    # def play_again(self):
-    #     """
-    #     Asks the user if they want to play again.
+    def play_again(self):
+        """
+        Asks the user if they want to play again.
 
-    #     Args:
-    #         self (Director): An instance of Director.
-    #     """
-    #     if not self._play:
-    #         return
+        Args:
+            self (Director): An instance of Director.
+        """
 
-    #     elif self._lives == 0:
-    #         answer = ""
-
-    #         while (answer != "y" and answer != "n"):
-    #             answer = input("Want to play again? [y/n] ").lower()
-
-    #             if (answer != "n" and answer != "y"):
-    #                 print("Please enter a \"y\" or a \"n\".")
-
-    #         if answer == "n":
-    #             print("\nGame over. You chose to stop playing.\n")
-    #             self._play = False
-    #         else:
-    #             self._play = True
-
-    #     else:
-    #         return
+        
 
 
 """Shane Cook and Antonio Saucedo are the authors of this document"""
