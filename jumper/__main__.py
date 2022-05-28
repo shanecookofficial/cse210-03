@@ -1,4 +1,3 @@
-from re import A
 from game.director import Director
 
 director = Director()
