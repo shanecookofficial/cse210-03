@@ -1,7 +1,7 @@
 """ Code for game setup and call classes from other files to be used in the game"""
-from displayPlayer import displayPlayer
-from check import Check
-from word import Word
+from game.displayPlayer import displayPlayer
+from game.check import Check
+from game.word import Word
 import random
 
 
