@@ -1,4 +1,4 @@
-class displayPlayer():
+class displayPlayer:
 
     def __init__(self):
 
