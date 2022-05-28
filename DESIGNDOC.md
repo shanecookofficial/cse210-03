@@ -26,6 +26,7 @@ Director
 | - word
 | - guess
 | - guesses
+| - guessedCorrect
 | - playAgain
 ----------------------------
 | + start_game()

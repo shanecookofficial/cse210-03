@@ -9,26 +9,26 @@ class Word:
 
     def __init__(self) -> None:
         self.library = [
-"Flamingo",
-"Boutique",
-"Hurricane",
-"Freezing",
-"Parachute",
-"Escalator",
-"Taco",
-"Salad",
-"Plane",
-"Technology",
-"Door",
-"Dress",
-"Pineapple",
-"Joy",
-"Conditioner",
-"Hymn",
-"Laugh",
-"Guess",
-"Switch",
-"Paper"]
+"flamingo",
+"boutique",
+"hurricane",
+"freezing",
+"parachute",
+"escalator",
+"taco",
+"salad",
+"plane",
+"technology",
+"door",
+"dress",
+"pineapple",
+"joy",
+"conditioner",
+"hymn",
+"laugh",
+"guess",
+"switch",
+"paper"]
     
     def pickWord(self):
 

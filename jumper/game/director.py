@@ -17,6 +17,7 @@ class Director:
         word: string - stores the word to be guessed by player.
         guess: string - stores players guess.
         guesses: list - stores a list of player guesses.
+        guessedCorrect - tracks the number of letters guessed.
         playAgain: string - stores the players choice of playing again or not."""
 
     # Shane & Antonio
@@ -28,6 +29,7 @@ class Director:
         self._word = Word()
         self._guess = ""
         self._guesses = []
+        self._guessedCorrect = 0
         self._playAgain = ""
 
     # Shane
@@ -58,7 +60,7 @@ class Director:
             self (Director): An instance of Director.
         """
 
-        while self._lives > 0:
+        while (self._lives > 0):
             self._guess = input("Guess a letter [a-z]: ")
 
             while (not self._guess.isalpha()) or (len(self._guess) > 1) or (self._guess in self._guesses):
@@ -75,6 +77,12 @@ class Director:
                     print(i + " ", end="")
                 else:
                     print("_ ", end="")
+            self._guessedCorrect = 0
+            for char in self._secret_word:
+                if char in self._guesses:
+                    self._guessedCorrect += 1
+            if self._guessedCorrect == len(self._secret_word):
+                self._lives = 0
             print("\n")
             self._displayPlayer.displayJumper()
 
@@ -88,7 +96,7 @@ class Director:
         """
         self._play_again = input("Do ya wanna play again? [y/n] ")
 
-        while (not self._play_again.isalpha()) and (self._play_again.lower() != "y") and (self._play_again.lower() != "n"):
+        while ((not self._play_again.isalpha()) or (self._play_again.lower() not in ("y", "n"))):
             self._play_again = input("Do ya wanna play again? [y/n] ")
 
         if (self._play_again.lower() == "n"):
