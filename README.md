@@ -42,7 +42,12 @@ You can also run the program from an IDE like Visual Studio Code. Start your IDE
 ---
 The project files and folders are organized as follows:
 
-!!!THIS PORTION NEEDS TO BE UPDATED!!!
+root                    (project root folder)
++-- jumper              (source code for game)
+  +-- game              (specific classes)
+  +-- __main__.py       (program entry point)
++-- DESIGNDOC.md        (program design details)
++-- README.md           (general info)
 
 ---
 ## Required Technologies

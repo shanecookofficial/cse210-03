@@ -11,65 +11,58 @@
   * Github was used to house the public repository(see "Read Me" link above for design specifications)
 ---
 ## The Plan
-The plan for this program is to have three classes, the player, puzzle and terminal_service classes, to be called upon by the director class which will call upon by the main file to run the program. 
+The plan for this program is to have three classes, the word, check and displayPlayer classes, to be called upon by the director class which will call upon by the main file to run the program.
 
 <p>&nbsp;</p>
-The first class is the <strong>director</strong> class. This class will call upon other classes to retrieve information from its parent classes. 
+The first class is the <strong>director</strong> class. This class will call upon other classes to retrieve information from its parent classes and direct the flow of the program. 
 
 Director
 ---------------------------
 
-| - word
-| - displayPlayer
-| - guess
+| - play
 | - lives
+| - displayPlayer
+| - check
+| - word
+| - guess
+| - guesses
+| - playAgain
 ----------------------------
 | + start_game()
-| + get_inputs()
-| + do_outputs()
+| + play()
+| + play_again()
 ----------------------------
 
 <p>&nbsp;</p>
-The second class is the <strong>player</strong> class. This class represents the player of the game. This class will store the player's life, the parachute (another representation of the player's life) and the chosen letter for the player (which will be use to guess).
+The second class is the <strong>word</strong> class. This class will choose a word from a list utilizing the random library and send the word string to the child class to display and perform needed actions upon.
 
-Player
+Word
 ---------------------------
-| - life
-| - parachuteLife
-| - letterChosen
+| - library
 ----------------------------
-| + getLife()
-| + getParachuteLife()
-| + getLetterChosen()
-| + updateLife()
-| + updateParachuteLife()
-| + updateLetterChosen()
+| + pickWord()
 ----------------------------
 
 <p>&nbsp;</p>
-The third class is the <strong>puzzle</strong> class. This class will choose a word from a list utilizing the random library and send the word information the child class to display and perform needed actions upon.
+The third class is the <strong>check</strong> class. This class will determine if a player guess is correct or not.
 
-Puzzle
+Check
 ---------------------------
 
-| - words
-| - value
-| - pickedWord
+| - check
 ----------------------------
-| + list_of_words()
-| + get_value()
-| + get_words()
+| + checkGuess()
 ----------------------------
 
 <p>&nbsp;</p>
-The fourth class is the <strong>terminal_service</strong> class. This class will provide input and output operations to the child class.
+The fourth class is the <strong>displayPlayer</strong> class. This class will store and append the jumper visuals list.
 
-Terminal_Service
+displayPlayer
 ---------------------------
 
-| - NEED
+| - jumperDisplay
 ----------------------------
-| + NEED()
+| + displayJumper()
 ----------------------------
 
 ---
@@ -90,20 +83,16 @@ Antonio Saucedo
 * Contributed three to four words to puzzle class word list.(Parachute, Escalator, Hurricane, Freezing.)
 
 Godwin Iyip
-- Create the Puzzle Private Class
-  - Contains the Functions:
-    - List of the words: (list_of_words)
-    - Get Value: (get_value)
-    - Get list of Words: (get_words)
-
+* Create the Word Private Class
 * Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
-- Designing and creating the Player class.
-* Contributed with four words for the list of words to be guessed. These words are courage, continue, counts, churchill.
+* Designing and creating the displayPlayer class.
+* Contributed with four words for the list of words to be guessed.(Courage, Continue, Counts, Churchill.)
 
 Chinemerem Ukeje (Cole)
-- Create the Terminal Service Class
+* Create the Check Class
 * Contributed three to four words to puzzle class word list.
+
 ---
 *Shane Cook is the author of this document*
