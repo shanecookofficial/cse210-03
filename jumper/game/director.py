@@ -5,7 +5,7 @@ from word import Word
 import random
 
 
-class Director():
+class Director:
     """This class will initiate and direct the flow of the jumper game.
 
     Attributes:
@@ -19,6 +19,8 @@ class Director():
         self._displayPlayer = displayPlayer()
         self._check = Check()
         self._word = Word()
+        self._guess = ""
+        self._guesses = []
         
         
     # Shane
@@ -33,21 +35,29 @@ class Director():
         while self.play:
             self._displayPlayer.displayJumper()
             self._secret_word = self._word.pickWord()
-            self.get_inputs()
-            self.do_outputs()
+            self.play()
             self.play_again()
 
     # Antonio
-    def get_inputs(self):
+    def play(self):
         if not self.play:
             return
-        pass
+        
+        while not self._guess(0).isalpha():
+            self._guess = input("Guess a letter [a-z]: ")
+            if not self._guess(0).isalpha(): return
+            if not self._check.checkGuess(self._guess(0), self._secret_word):
+                self.lives -= 1
+                self._displayPlayer.displayUpdate()
+            else:
+                self._guesses.append(self._guess(0))
+            for i in self._secret_word:
+                if i in self._guesses:
+                    print(i)
+                else:
+                    print("_")
+            self._displayPlayer.displayJumper()
 
-    # Antonio
-    def do_outputs(self):
-        if not self.play:
-            return
-        pass
     
     #Shane
     def play_again(self):

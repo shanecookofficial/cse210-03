@@ -1,6 +1,6 @@
 import random
 
-class Word():
+class Word:
 
     def __init__(self) -> None:
         self.library = [
