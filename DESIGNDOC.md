@@ -70,16 +70,18 @@ displayPlayer
 ## Team Responsibilities
 
 Shane Cook
-* Contributed three to four words to puzzle class word list.(Flamingo, Boutique, Taco, Salad)
 * DESIGNDOC.md documentation
 * README.md documentation
 * initializer method in the Director() class
 * start_game method in the Director() class
+* play_again method in the Director() class
+* Contributed three to four words to puzzle class word list.(Flamingo, Boutique, Taco, Salad)
 
 Antonio Saucedo
 * DESIGNDOC.md "Plan" & "Principles" section
-* get_inputs method for the director class.
-* do_outputs method for the director class.
+* initializer method in the Director() class
+* play method for the Director() class
+* play_again method in the Director() class
 * Contributed three to four words to puzzle class word list.(Parachute, Escalator, Hurricane, Freezing.)
 
 Godwin Iyip
@@ -87,7 +89,7 @@ Godwin Iyip
 * Contributed three to four words to puzzle class word list.
 
 Manuel Cipriano
-* Designing and creating the displayPlayer class.
+* Designing and creating the displayPlayer class
 * Contributed with four words for the list of words to be guessed.(Courage, Continue, Counts, Churchill.)
 
 Chinemerem Ukeje (Cole)
