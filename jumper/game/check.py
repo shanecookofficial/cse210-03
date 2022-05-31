@@ -12,3 +12,7 @@ class Check:
             if guess == i:
                 return True
         return False
+
+"""
+This is an example change
+"""
